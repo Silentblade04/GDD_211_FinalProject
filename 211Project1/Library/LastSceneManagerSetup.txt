@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/ScriptTestingScene.unity
+- path: C:/Users/Paulo/Desktop/UnityProjects/MyProject/Assets/Scenes/GDD200Assignment3.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
