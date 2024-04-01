@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
     private InputHandler inputHandlerScript;
+    private Camera mainCamera;
+    [SerializeField] private LayerMask groundMask;
     [SerializeField] private float MoveSpeed = 5f;
     [SerializeField] private float RotateSpeed;
 
@@ -14,6 +17,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float dashCooldown = 1f;
     bool isDashing;
     bool canDash;
+
+    public PlayerWeapon weapon;
 
 
     [SerializeField] private Camera playerCam;
@@ -28,6 +33,7 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         canDash = true;
+        mainCamera = Camera.main;
     }
 
     void Update()
@@ -38,13 +44,14 @@ public class PlayerController : MonoBehaviour
         //Move in Direction Aiming
 
         var movementVector = MoveTowardTarget(targetVector);
-        
+
 
         //Rotate in Direction Traveling
 
-        RotateTowardMovementVector(movementVector);
+        //RotateTowardMovementVector(movementVector);
+        Aim();
 
-         if (isDashing)
+        if (isDashing)
         {
             gameObject.GetComponent<TrailRenderer>().enabled = true;
             return;
@@ -58,10 +65,48 @@ public class PlayerController : MonoBehaviour
         {
             StartCoroutine(Dash());
         }
+        if (Input.GetButtonDown("Fire1"))
+        {
+            weapon.Shoot();
+        }
 
     }
 
-    private void RotateTowardMovementVector(Vector3 movementVector)
+    //Followed Bartha Szabolcs guide for aiming
+    private void Aim()
+    {
+        var (success, position) = GetMousePosition();
+        if (success)
+        {
+            // Calculate the direction
+            var direction = position - transform.position;
+
+
+            // Ignore the height difference.
+            direction.y = 0;
+
+            // Make the transform look in the direction.
+            transform.forward = direction;
+        }
+    }
+
+    public (bool success, Vector3 position) GetMousePosition()
+    {
+        var ray = mainCamera.ScreenPointToRay(Input.mousePosition);
+
+        if (Physics.Raycast(ray, out var hitInfo, Mathf.Infinity, groundMask))
+        {
+            // The Raycast hit something, return with the position.
+            return (success: true, position: hitInfo.point);
+        }
+        else
+        {
+            // The Raycast did not hit anything.
+            return (success: false, position: Vector3.zero);
+        }
+    }
+
+    /*private void RotateTowardMovementVector(Vector3 movementVector)
     {
         if (movementVector.magnitude == 0)
         {
@@ -69,7 +114,7 @@ public class PlayerController : MonoBehaviour
         }
         var rotation = Quaternion.LookRotation(movementVector);
         transform.rotation = Quaternion.RotateTowards(transform.rotation, rotation, RotateSpeed);
-    }
+    }*/
 
     private Vector3 MoveTowardTarget(Vector3 targetVector)
     {
