@@ -859,7 +859,7 @@ Transform:
   m_GameObject: {fileID: 1028299166}
   serializedVersion: 2
   m_LocalRotation: {x: 0.40580028, y: 0.34402686, z: -0.1682345, w: 0.82986075}
-  m_LocalPosition: {x: -5, y: 10, z: -5}
+  m_LocalPosition: {x: 5.21, y: 10, z: -3.44}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -880,6 +880,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerPosition: {fileID: 2104358311}
   targetCameraPosition: {x: 0, y: 0, z: 0}
+  camZoomAdjust: 5
+  newCamHeight: 0
 --- !u!1 &1299353496
 GameObject:
   m_ObjectHideFlags: 0
@@ -1151,7 +1153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawn: {fileID: 815860997}
-  gunType: 0
+  gunType: 1
 --- !u!1 &1928379951
 GameObject:
   m_ObjectHideFlags: 0
@@ -1330,8 +1332,10 @@ GameObject:
   - component: {fileID: 2104358312}
   - component: {fileID: 2104358315}
   - component: {fileID: 2104358318}
-  - component: {fileID: 2104358316}
   - component: {fileID: 2104358317}
+  - component: {fileID: 2104358316}
+  - component: {fileID: 2104358319}
+  - component: {fileID: 2104358320}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1554,6 +1558,36 @@ TrailRenderer:
   m_Autodestruct: 0
   m_Emitting: 1
   m_ApplyActiveColorSpace: 1
+--- !u!114 &2104358319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104358311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8871817a7cfb17e4e92daa3fb542128a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 5
+  currentHealth: 0
+--- !u!114 &2104358320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104358311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c1c3edae3edecd429538ff56cfad8c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ammunition: {fileID: 0}
+  ammos:
+  - {fileID: 11400000, guid: 33ade5346e7482743b49fbc4000a1972, type: 2}
+  - {fileID: 11400000, guid: 4ad911b3083045a4aa391dd680ce01e3, type: 2}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

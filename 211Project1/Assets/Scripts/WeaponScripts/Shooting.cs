@@ -37,6 +37,7 @@ public class Shooting : MonoBehaviour
                 mpos = new Vector3(mpos.x * Random.Range(-1f, 1f) * ammunition.sprd, mpos.y * Random.Range(-1f, 1f) * ammunition.sprd);
                 Vector3 aimVec = (mpos - transform.position).normalized;
 
+
             }
             if (ammunition == ammos[1]) //shooting with rifle rounds
             {
