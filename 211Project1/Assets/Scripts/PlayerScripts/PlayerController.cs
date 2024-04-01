@@ -46,10 +46,12 @@ public class PlayerController : MonoBehaviour
         var movementVector = MoveTowardTarget(targetVector);
 
 
-        //Rotate in Direction Traveling
+        //Rotate in mouse direction
 
-        //RotateTowardMovementVector(movementVector);
         Aim();
+
+
+        //Dash Control
 
         if (isDashing)
         {
@@ -65,10 +67,12 @@ public class PlayerController : MonoBehaviour
         {
             StartCoroutine(Dash());
         }
-        if (Input.GetButtonDown("Fire1"))
+
+        //Weapon Shooting
+        /*if (Input.GetButtonDown("Fire1"))
         {
             weapon.Shoot();
-        }
+        }*/
 
     }
 
