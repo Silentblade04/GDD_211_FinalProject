@@ -17,7 +17,7 @@ public class Health : MonoBehaviour
         if (currentHealth <= 0) { 
         //Play Dead Animation
         //Set isDead = true;
-        //Lock Player control
+        //Lock Player control if health script is on player
         //Activate Respawn or Return to Title Canvas
         }
     }
