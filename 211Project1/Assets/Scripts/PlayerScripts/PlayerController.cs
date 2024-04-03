@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class PlayerController : MonoBehaviour
 {
@@ -18,6 +19,13 @@ public class PlayerController : MonoBehaviour
     bool isDashing;
     bool canDash;
 
+    //Dash Settings
+    [SerializeField] private float rushSpeed = 8000f;
+    [SerializeField] private float rushDuration = 2f;
+    [SerializeField] private float rushCooldown = 10f;
+    bool isRushing;
+    bool canRush;
+
     public PlayerWeapon weapon;
 
 
@@ -33,6 +41,7 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         canDash = true;
+        canRush = true;
         mainCamera = Camera.main;
     }
 
@@ -53,12 +62,12 @@ public class PlayerController : MonoBehaviour
 
         //Dash Control
 
-        if (isDashing)
+        if (isDashing||isRushing)
         {
             gameObject.GetComponent<TrailRenderer>().enabled = true;
             return;
         } 
-         if (isDashing == false) 
+         if (isDashing == false && isRushing == false) 
         {
             gameObject.GetComponent<TrailRenderer>().enabled = false;
         }
@@ -68,11 +77,17 @@ public class PlayerController : MonoBehaviour
             StartCoroutine(Dash());
         }
 
+        /*if (Input.GetKeyDown(KeyCode.V) && canRush)
+        {
+            StartCoroutine(BullRush());
+            Debug.Log("rush pressed");
+        }*/
+
         //Weapon Shooting
-        /*if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1"))
         {
             weapon.Shoot();
-        }*/
+        }
 
     }
 
@@ -110,15 +125,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    /*private void RotateTowardMovementVector(Vector3 movementVector)
-    {
-        if (movementVector.magnitude == 0)
-        {
-            return;
-        }
-        var rotation = Quaternion.LookRotation(movementVector);
-        transform.rotation = Quaternion.RotateTowards(transform.rotation, rotation, RotateSpeed);
-    }*/
+
 
     private Vector3 MoveTowardTarget(Vector3 targetVector)
     {
@@ -141,6 +148,20 @@ public class PlayerController : MonoBehaviour
 
         yield return new WaitForSeconds(dashCooldown);
         canDash = true;
+    }
+
+    private IEnumerator BullRush()
+    {
+        canRush = false;
+        isRushing = true;
+        rb.velocity = Vector3.forward * rushSpeed;
+        yield return new WaitForSeconds(rushDuration);
+        rb.velocity = Vector3.zero;
+        isRushing = false;
+
+
+        yield return new WaitForSeconds(rushCooldown);
+        canRush = true;
     }
 
 }

@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 12
   rounds: 8
-  spread: 0.25
-  recoil: 1.5
+  spread: 0.5
+  recoil: 0.2
