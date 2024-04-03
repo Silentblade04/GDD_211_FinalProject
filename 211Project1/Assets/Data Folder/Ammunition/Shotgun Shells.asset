@@ -15,4 +15,4 @@ MonoBehaviour:
   damage: 12
   rounds: 8
   spread: 0.5
-  recoil: 0.2
+  recoil: 1.2
