@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638477055822000662
-    m_Hash: 3219397261
+      ticks: 638477073721928442
+    m_Hash: 545731776
   m_LockFileStatus:
     m_FilePath: C:/Users/Paulo/Desktop/UnityProjects/GDD_211_FinalProject/211Project1/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638477055822050998
-    m_Hash: 3648541768
+      ticks: 638477073721933482
+    m_Hash: 2038635372
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
