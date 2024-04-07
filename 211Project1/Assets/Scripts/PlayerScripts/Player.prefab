@@ -48,7 +48,7 @@ GameObject:
   - component: {fileID: 3327515768447317021}
   m_Layer: 8
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -552,4 +552,3 @@ MonoBehaviour:
   ammos:
   - {fileID: 11400000, guid: 33ade5346e7482743b49fbc4000a1972, type: 2}
   - {fileID: 11400000, guid: 4ad911b3083045a4aa391dd680ce01e3, type: 2}
-  health: {fileID: 0}

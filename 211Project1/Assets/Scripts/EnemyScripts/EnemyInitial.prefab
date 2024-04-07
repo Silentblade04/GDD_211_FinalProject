@@ -107,8 +107,8 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
+  m_Radius: 0.75
+  m_Height: 2.5
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &508972058268092387
@@ -185,7 +185,7 @@ MonoBehaviour:
   timeBetweenAttacks: 5
   projectile: {fileID: 9017715817762434212, guid: afa912c127268c34d8ce38a72790fe2e, type: 3}
   sightRange: 20
-  attackRange: 4
+  attackRange: 8
   playerInSightRange: 0
   playerInAttackRange: 0
 --- !u!114 &223879656448156762
