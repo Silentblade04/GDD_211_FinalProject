@@ -257,3 +257,112 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 3534.228574 seconds.
+  path: Assets/Scripts/shotgun_barrel_Extract1_BaseMap.png
+  artifactKey: Guid(af0ae9a40558e544aac6de96f7518800) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/shotgun_barrel_Extract1_BaseMap.png using Guid(af0ae9a40558e544aac6de96f7518800) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd31385436dafaea86a47a2d93cae55b3') in 0.086232 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Scripts/shotgun_handle_Extract2_BaseMap.png
+  artifactKey: Guid(61fafb4aa62f51240849d744d14fcc14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/shotgun_handle_Extract2_BaseMap.png using Guid(61fafb4aa62f51240849d744d14fcc14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe071c39e7c091f9e4d3e6e9990463f8') in 0.021779 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/Scripts/shotgun_handle_Extract1_Normal.png
+  artifactKey: Guid(62aad88a919d405479bf5fe81bee296a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/shotgun_handle_Extract1_Normal.png using Guid(62aad88a919d405479bf5fe81bee296a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f29196574192f6eb27c3ce2c63d2bd45') in 0.023459 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Scripts/shotgun_barrel_Extract1_Normal.png
+  artifactKey: Guid(19e2e9757482de6479ea5141aad79840) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/shotgun_barrel_Extract1_Normal.png using Guid(19e2e9757482de6479ea5141aad79840) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a2815e8eda93434fecde3f67b1d997f') in 0.023621 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Scripts/shotgun_barrel_PolySphere_BaseMap.png
+  artifactKey: Guid(95c92a1f3ccb74749b1e4495a7c572ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/shotgun_barrel_PolySphere_BaseMap.png using Guid(95c92a1f3ccb74749b1e4495a7c572ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc031bb38cb09d0d88fd11e00d08a700') in 0.023068 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Scripts/shotgun_barrel_Extract3_MaskMap.png
+  artifactKey: Guid(533eede485782ef419a99daa81776b86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/shotgun_barrel_Extract3_MaskMap.png using Guid(533eede485782ef419a99daa81776b86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87a9518148effe6c71a247822c037c2d') in 0.042315 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/Scripts/shotgun_handle_Extract2_Normal.png
+  artifactKey: Guid(eadd3171cd438d04080f0cf32e4c1ff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/shotgun_handle_Extract2_Normal.png using Guid(eadd3171cd438d04080f0cf32e4c1ff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22a9022c4db8dec2130297c7e271d1c2') in 0.034056 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Scripts/shotgun_handle_PolySphere_MaskMap.png
+  artifactKey: Guid(57c5627722af3934faefe97314ad0c5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/shotgun_handle_PolySphere_MaskMap.png using Guid(57c5627722af3934faefe97314ad0c5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae2d0d87b259abc2504d5b87c467ff04') in 0.023220 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Scripts/shotgun_barrel_Extract3_BaseMap.png
+  artifactKey: Guid(2c38f2a07bb05b747977e78fff645b38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/shotgun_barrel_Extract3_BaseMap.png using Guid(2c38f2a07bb05b747977e78fff645b38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '655324373a7de093aeea8287ef621362') in 0.021330 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Scripts/shotgun_handle_Extract1_MaskMap.png
+  artifactKey: Guid(5a1ff3dcc7536274a99bb22cbb43613d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/shotgun_handle_Extract1_MaskMap.png using Guid(5a1ff3dcc7536274a99bb22cbb43613d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1625e8de6b7c53850b19948eebca9efb') in 0.017390 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Scripts/shotgun_handle_PolySphere_BaseMap.png
+  artifactKey: Guid(4f4560fdaec0ef5498a86e61b1ae0f24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/shotgun_handle_PolySphere_BaseMap.png using Guid(4f4560fdaec0ef5498a86e61b1ae0f24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '511a317a6442fe379b03a0a7a280ab18') in 0.020106 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Scripts/shotgun_handle_PolySphere_Normal.png
+  artifactKey: Guid(21c1542892999f14eb3772939c28f36b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/shotgun_handle_PolySphere_Normal.png using Guid(21c1542892999f14eb3772939c28f36b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47f82d67732423e055b33909603e57d8') in 0.021156 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Scripts/shotgun_barrel_Extract3_Normal.png
+  artifactKey: Guid(ae27dbb67f444674a8a9098d4d361d43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/shotgun_barrel_Extract3_Normal.png using Guid(ae27dbb67f444674a8a9098d4d361d43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f016155454b42ad748c7e699227fd31') in 0.024248 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
