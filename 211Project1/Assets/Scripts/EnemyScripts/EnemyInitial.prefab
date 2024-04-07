@@ -15,9 +15,10 @@ GameObject:
   - component: {fileID: 508972058268092387}
   - component: {fileID: 4790081738964328314}
   - component: {fileID: 402797581088281046}
+  - component: {fileID: 223879656448156762}
   m_Layer: 0
   m_Name: EnemyInitial
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -147,7 +148,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 5
+  m_Speed: 3
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -182,8 +183,22 @@ MonoBehaviour:
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointRange: 5
   timeBetweenAttacks: 5
-  projectile: {fileID: 1962436756978561067, guid: 71fae3116bde39f45b1e2c5ff040ca3a, type: 3}
+  projectile: {fileID: 9017715817762434212, guid: afa912c127268c34d8ce38a72790fe2e, type: 3}
   sightRange: 20
-  attackRange: 3
+  attackRange: 4
   playerInSightRange: 0
   playerInAttackRange: 0
+--- !u!114 &223879656448156762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8094360429717663874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8871817a7cfb17e4e92daa3fb542128a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 20
+  currentHealth: 0

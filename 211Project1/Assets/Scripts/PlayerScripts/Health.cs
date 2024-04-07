@@ -11,10 +11,12 @@ public class Health : MonoBehaviour
     {
         currentHealth = maxHealth;
     }
-    void takeDamage(int amount)
+    public void takeDamage(int amount)
     {
         currentHealth -= amount;
-        if (currentHealth <= 0) { 
+        if (currentHealth <= 0) {
+            Debug.Log("DEAD Thing");
+            Destroy(gameObject);
         //Play Dead Animation
         //Set isDead = true;
         //Lock Player control

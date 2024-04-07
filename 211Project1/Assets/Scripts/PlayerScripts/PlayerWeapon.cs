@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerWeapon : MonoBehaviour
@@ -21,6 +22,7 @@ public class PlayerWeapon : MonoBehaviour
     private void Start()
     {
         canShoot = true;
+            
     }
 
     void Update()
@@ -40,20 +42,33 @@ public class PlayerWeapon : MonoBehaviour
     public void Shoot()
     {
       //Raycast for hits
+      /*
         Ray ray = new Ray(spawn.position, spawn.forward);
         RaycastHit hit;
         float shotDistance = 25f;
         if (Physics.Raycast(ray,out hit, shotDistance))
         {
             shotDistance = hit.distance;
-        }
+     
+
+            // Check if the component exists
+            if (hit.collider != null && hit.collider.CompareTag("Enemy"))
+            {
+                // Call a method or access a variable of the component
+                Debug.Log("I hit Something");
+                hit.collider.GetComponent<Health>().takeDamage(ammunition.dmg);
+            }
+
+        } 
+      Debug.DrawRay(ray.origin, ray.direction * shotDistance, Color.red, 1f);
+      */
 
         //Spawn Bullet
         if (canShoot == true)
         {
             StartCoroutine(BulletSpawner());
         }
-        Debug.DrawRay(ray.origin, ray.direction * shotDistance, Color.red, 1f);
+       
     }
 
     private IEnumerator BulletSpawner()
